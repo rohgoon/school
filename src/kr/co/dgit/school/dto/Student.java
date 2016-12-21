@@ -1,19 +1,21 @@
 package kr.co.dgit.school.dto;
 
+import java.util.Date;
+
 import com.mysql.fabric.xmlrpc.base.Data;
 
 public class Student {
 	private int studId;
 	private String name;
 	private String email;
-	private Data dob;
+	private Date dob;
 	
 	public Student() {
 		
 	}
 	
 	
-	public Student(int studId, String name, String email, Data dob) {
+	public Student(int studId, String name, String email, Date dob) {
 		super();
 		this.studId = studId;
 		this.name = name;
@@ -46,11 +48,11 @@ public class Student {
 		this.email = email;
 	}
 
-	public Data getDob() {
+	public Date getDob() {
 		return dob;
 	}
 
-	public void setDob(Data dob) {
+	public void setDob(Date dob) {
 		this.dob = dob;
 	}
 

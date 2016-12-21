@@ -39,4 +39,4 @@ where stud_id = 2;
 
 delete from student where stud_id = 3; 
 
-
+select stud_id, name, email, dob from student;
