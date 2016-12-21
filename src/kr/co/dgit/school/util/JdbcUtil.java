@@ -1,4 +1,4 @@
-package kr.co.dgit.school.student.jdbcutil;
+package kr.co.dgit.school.util;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

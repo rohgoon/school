@@ -1,4 +1,4 @@
-package kr.co.dgit.school.student;
+package kr.co.dgit.school;
 
 import com.mysql.fabric.xmlrpc.base.Data;
 
@@ -9,7 +9,7 @@ public class Student {
 	private Data dob;
 	
 	public Student() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	
