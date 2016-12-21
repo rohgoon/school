@@ -1,4 +1,4 @@
-package kr.co.dgit;
+package kr.co.dgit.school.student;
 
 import com.mysql.fabric.xmlrpc.base.Data;
 

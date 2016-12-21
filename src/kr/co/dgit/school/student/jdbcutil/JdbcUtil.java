@@ -1,11 +1,11 @@
-package kr.co.dgit.util;
+package kr.co.dgit.school.student.jdbcutil;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Util {
+public class JdbcUtil {
 	public static void close(Connection con){
 		if(con != null){
 			try {
