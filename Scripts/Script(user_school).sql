@@ -1,31 +1,31 @@
--- ÇĞ±³
+-- ï¿½Ğ±ï¿½
 DROP SCHEMA IF EXISTS school;
 
--- ÇĞ±³
+-- ï¿½Ğ±ï¿½
 CREATE SCHEMA school;
 
--- ÇĞ»ı
+-- ï¿½Ğ»ï¿½
 CREATE TABLE student (
-	stud_id INTEGER     NOT NULL COMMENT 'ÇĞ¹ø', -- ÇĞ¹ø
-	name    VARCHAR(50) NOT NULL COMMENT '¼º¸í', -- ¼º¸í
-	email   VARCHAR(50) NOT NULL COMMENT '¸ŞÀÏ', -- ¸ŞÀÏ
-	dob     DATE        NULL     COMMENT '»ıÀÏ' -- »ıÀÏ
+	stud_id INTEGER     NOT NULL COMMENT 'ï¿½Ğ¹ï¿½', -- ï¿½Ğ¹ï¿½
+	name    VARCHAR(50) NOT NULL COMMENT 'ï¿½ï¿½ï¿½ï¿½', -- ï¿½ï¿½ï¿½ï¿½
+	email   VARCHAR(50) NOT NULL COMMENT 'ï¿½ï¿½ï¿½ï¿½', -- ï¿½ï¿½ï¿½ï¿½
+	dob     DATE        NULL     COMMENT 'ï¿½ï¿½ï¿½ï¿½' -- ï¿½ï¿½ï¿½ï¿½
 )
-COMMENT 'ÇĞ»ı';
+COMMENT 'ï¿½Ğ»ï¿½';
 
--- ÇĞ»ı
+-- ï¿½Ğ»ï¿½
 ALTER TABLE student
-	ADD CONSTRAINT PK_student -- ÇĞ»ı ±âº»Å°
+	ADD CONSTRAINT PK_student -- ï¿½Ğ»ï¿½ ï¿½âº»Å°
 		PRIMARY KEY (
-			stud_id -- ÇĞ¹ø
+			stud_id -- ï¿½Ğ¹ï¿½
 		);
 
 
-insert into student values(1, '±è»çºÎ', 'ksb@test.co.kr', '1970-1-1'),
-(2, 'µµ±úºñ', 'dkb@test.co.kr', '2000-12-12'),
-(3, '±è°íÀº', 'kky@test.co.kr', '1999-12-06');
+insert into student values(1, 'ê¹€ì‚¬ë¶€', 'ksb@test.co.kr', '1970-1-1'),
+(2, 'ë„ê¹¨ë¹„', 'dkb@test.co.kr', '2000-12-12'),
+(3, 'ê¹€ê³ ì€', 'kky@test.co.kr', '1999-12-06');
 
-insert into student values(3, '±è°íÀº', 'kky@test.co.kr', '1999-12-06');
+insert into student values(3, 'ê¹€ê³ ì€', 'kky@test.co.kr', '1999-12-06');
 
 select * from student;
 
@@ -34,8 +34,9 @@ from student
 where stud_id = 2;
 
 update student
-set name = '°øÀ¯', email ='ky@test.co.kr', dob = '1977-09-07'
+set name = 'ê³µìœ ', email ='ky@test.co.kr', dob = '1977-09-07'
 where stud_id = 2;
 
-delete from student where stud_id = 3;
+delete from student where stud_id = 3; 
+
 
