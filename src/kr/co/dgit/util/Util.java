@@ -12,7 +12,7 @@ public class Util {
 				con.close();
 				con = null;
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			
@@ -25,7 +25,7 @@ public class Util {
 				pstmt.close();
 				pstmt = null;
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			
@@ -39,7 +39,7 @@ public class Util {
 				rs.close();
 				rs = null;
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			
